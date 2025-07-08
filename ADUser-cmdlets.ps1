@@ -30,3 +30,7 @@ New-ADUser -Name "User Name" -GivenName "Bill" -Surname "Gates" -DisplayName "Bi
   -Title "IT Specialist" -Department "IT" -Office "California" `
   -Path "OU=Department,DC=domain,DC=com" -AccountPassword (ConvertTo-SecureString "password-here" -AsPlainText -Force) `
   -Enabled $true
+
+# Export all users to CSV for Reporting and Auditing.
+Get-ADUser -Filter * | Export-Csv
+
