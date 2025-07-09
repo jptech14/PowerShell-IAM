@@ -1,4 +1,6 @@
-# These cmdlets require the Active Directory module.
+# Get-ADUser / Set-ADUser / New-ADUser cmdlets
+# Retrieve, modify, or create Active Directory user accounts.
+# Automate user provisioning, updates, and deprovisioning.
 
 # Get a user by username
 Get-ADUser -Identity username
