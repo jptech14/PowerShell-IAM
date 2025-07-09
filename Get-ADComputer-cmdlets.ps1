@@ -1,3 +1,6 @@
+# Get-ADComputer / Remove-ADComputer
+# Manage computer objects in AD.
+# Clean up stale computer accounts.
 # The Active Directory module for PowerShell and proper permissions are required.
 
 # Retrieves information about computer accounts in Active Directory.
