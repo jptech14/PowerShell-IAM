@@ -26,6 +26,17 @@ New-ADUser -Name "Bill Gates" -SamAccountName bgates -UserPrincipalName bgates@m
   -Path "OU=Department,DC=domain,DC=com" -AccountPassword (ConvertTo-SecureString "Password-here" -AsPlainText -Force) `
   -Enabled $true
 
+# Get all users in a specific OU using SearchBase parameter
+Get-ADUser -Filter * -SearchBase "OU=IT,DC=contoso,DC=com"
+
+# Get users in a nested OU using SearchBase parameter
+Get-ADUser -Filter * -SearchBase "OU=NorthAmerica,OU=Users,DC=contoso,DC=com"
+
+# Export users from an OU to CSV using SearchBase parameter
+Get-ADUser -Filter * -SearchBase "OU=IT,DC=contoso,DC=com" -Properties DisplayName,EmailAddress |
+Select-Object DisplayName,EmailAddress |
+Export-Csv -Path "C:\Exports\ITUsers.csv" -NoTypeInformation
+
 # Create a user with more attributes
 New-ADUser -Name "User Name" -GivenName "Bill" -Surname "Gates" -DisplayName "Bill Gates" `
   -SamAccountName bgates-UserPrincipalName bgates@microsoft.com -EmailAddress "bgates@microsoft.com" `
