@@ -1,4 +1,5 @@
 # AzureAD Module cmdlets
+# Manage Azure RBAC roles and assignments.
 
 # Assign Reader Role to a User at Subscription Level
 $User = Get-AzADUser -UserPrincipalName "user@example.com"
