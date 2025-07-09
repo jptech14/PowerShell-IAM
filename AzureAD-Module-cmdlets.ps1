@@ -1,5 +1,10 @@
-# AzureAD Module cmdlets
+# AzureAD Module - Get-AzureADUser, Add-AzureADGroupMember
 # Manage Azure AD users and groups.
+# Cloud identity management.
+# You must be connected to Azure AD by using the Connect-AzureAD command first.
+
+Connect-AzureAD
+
 Get-AzureADUser
 
 # Filter by UPN.
