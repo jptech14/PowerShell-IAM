@@ -1,3 +1,7 @@
+# Get-ADGroup / New-ADGroup / Add-ADGroupMember cmdlets
+# Manage AD groups and memberships.
+# Automate group creation and user assignments.
+
 # Get all members of a group
 Get-ADGroupMember -Identity "IT Team"
 
