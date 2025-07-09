@@ -1,5 +1,5 @@
 # AzureAD Module cmdlets
-# Retrieves users from Azure Active Directory.
+# Manage Azure AD users and groups.
 Get-AzureADUser
 
 # Filter by UPN.
