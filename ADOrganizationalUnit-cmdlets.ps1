@@ -1,3 +1,7 @@
+# Get-ADOrganizationalUnit / New-ADOrganizationalUnit cmdlets
+# Manage OUs for structuring AD.
+# Automate OU creation and hierarchy.
+
 # Get all OUs in a domain.
 Get-ADOrganizationalUnit -Filter *
 
