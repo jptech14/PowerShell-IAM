@@ -1,7 +1,6 @@
 # Remove-ADUser
-# Permanently delete a user account from Active Directory.
-# Used when an account is no longer needed
-# Helps clean up stale or test accounts.
+# Deactivate or delete users.
+# Offboarding automation.
 
 # Remove a user by username
 Remove-ADUser -Identity "bgates" -Confirm:$false
