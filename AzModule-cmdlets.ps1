@@ -1,5 +1,6 @@
-# AzureAD Module cmdlets
+# Az Module - Get-AzRoleAssignment, New-AzRoleAssignment
 # Manage Azure RBAC roles and assignments.
+# Role-based access control in Azure.
 
 # Assign Reader Role to a User at Subscription Level
 $User = Get-AzADUser -UserPrincipalName "user@example.com"
