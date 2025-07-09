@@ -1,3 +1,7 @@
+# Get-ADGroup / New-ADGroup / Add-ADGroupMember
+# Manage AD groups and memberships.
+# Automate group creation and user assignments.
+
 # Retrieves information about one or more AD groups.
 Get-ADGroup -Identity "IT Team"
 
